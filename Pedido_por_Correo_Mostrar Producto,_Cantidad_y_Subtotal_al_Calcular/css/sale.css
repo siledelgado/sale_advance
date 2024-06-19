@@ -1,0 +1,232 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* RESETEO DE ESTILOS PARA LISTAS */
+li {
+    list-style: none;
+}
+
+/* RESETEO DE MÁRGENES Y RELLENO PARA ELEMENTOS */
+p, ul, * {
+    margin: 0;
+    padding: 0;
+}
+
+/* CAJAS CON MODELO DE CAJA DE BORDE */
+div, li {
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO */
+#top {
+    background-color: #23282c;
+}
+
+/* SECCIONES INTERNAS */
+.section_inner {
+    padding: 50px 10% 30px;
+}
+
+/* FONDO GENERAL DE LA PÁGINA */
+html {
+    height: 100%;
+}
+
+/* AJUSTE DE ALTURA MÍNIMA DEL CUERPO */
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+/* CENTRADO DE CONTENIDO */
+.center {
+    text-align: center;
+}
+
+/* TÍTULO DE SECCIÓN PRINCIPAL */
+.section_title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/* SECCIÓN DE MENÚ CON FONDO */
+.menu_section {
+    background: url("../images/sample_menu_bg.jpg") no-repeat bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* TÍTULO DE MENÚ */
+.menu_title {
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 60px;
+    margin-top: 80px;
+}
+
+/* SUBTÍTULO DEL MENÚ */
+.subt {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #42210b;
+    border-bottom: solid #42210b 1px;
+    margin: 20px;
+}
+
+/* LISTA DE PRODUCTOS */
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+/* ELEMENTO DE MENÚ DE CAFÉ */
+.caffee_menu_list_item {
+    width: 49%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+/* IMAGEN DE PRODUCTO */
+.caffee_menu_image {
+    width: 20%;
+    border-radius: 50%;
+}
+
+/* CONTENIDO DE MENÚ DE CAFÉ */
+.caffee_menu_content {
+    width: 80%;
+    padding: 10px;
+}
+
+/* BOTÓN GENERAL */
+.btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    z-index: 10;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(127, 136, 182, 1);
+    color: white;
+}
+
+/* FILAS DE PRODUCTOS */
+.fila {
+    display: flex;
+}
+
+/* BARRA DE NAVEGACIÓN PRINCIPAL */
+.header_nav {
+    background: linear-gradient(90deg, #fff 20%, rgba(0, 0, 0, .6) 60%);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* ENLACES DE NAVEGACIÓN */
+.global_nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/* ELEMENTO DE NAVEGACIÓN */
+.global_nav_item {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* ESTILO HOVER DE ELEMENTO DE NAVEGACIÓN */
+.global_nav_item:hover {
+    background: #fff;
+    color: #42210b;
+}
+
+/* LOGOTIPO */
+.logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+/* IMAGEN DEL LOGOTIPO */
+.logo img {
+    width: 100%;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #251e19;
+    color: white;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+/* NAVEGACIÓN DE PIE DE PÁGINA */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* ELEMENTO DE LISTA DE NAVEGACIÓN */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* ENLACE DE LISTA DE NAVEGACIÓN */
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/* IMAGEN DEL LOGOTIPO EN EL PIE DE PÁGINA */
+nav img {
+    max-height: 80px;
+    max-width: 80px;
+    height: auto;
+}
+.caffee_menu_list_item {
+    width: 49%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para cada elemento de la lista de café */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Márgenes inferiores */
+  }
+  .global_nav_item:hover {
+    background-color: white;
+    color: #42210b; /* Cambia el color del texto al hacer hover */
+  }
+  

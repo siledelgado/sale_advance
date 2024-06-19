@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* ESTILOS PARA LA CABECERA SECUNDARIA */
+.sub_header {
+  padding-bottom: 100px; /* Espacio inferior de la cabecera */
+}
+
+/* ESTILOS PARA EL FORMULARIO DE CONTACTO */
+.contact {
+  width: 100%;
+  margin-bottom: 30px; /* Márgenes inferiores del formulario */
+}
+
+.contact_line {
+  height: 50px;
+  line-height: 50px;
+}
+
+.contact_sign {
+  width: 25%;
+  background: #beb9b7;
+  border: solid 1px #beb9b7;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.contact_input {
+  width: 75%;
+  border: solid 1px #beb9b7;
+}
+
+.contact_content {
+  height: 100px; /* Altura del contenido del formulario */
+}
+
+/* ESTILOS PARA LOS INPUTS, SELECT Y TEXTAREA DEL FORMULARIO */
+.contact_input input, select, textarea {
+  border: none;
+  width: 99%; /* Ancho al 99% */
+}
+
+.contact_input input, select {
+  height: 50px; /* Altura de los inputs y select */
+}
+
+.contact_input textarea {
+  height: 100px; /* Altura del textarea */
+}
+
+/* ESTILOS PARA LOS BOTONES DEL FORMULARIO */
+.contact_btn_area {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  padding: 20px 0; /* Relleno superior e inferior */
+}
+
+.contact_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact_btn + .contact_btn {
+  margin-left: 10px; /* Márgenes izquierdos entre botones */
+}
+
+.submit_btn {
+  background: #9852a5; /* Fondo del botón de enviar */
+  color: #fff; /* Color del texto del botón de enviar */
+}
+
+.reset_btn {
+  background: #e6e6e6; /* Fondo del botón de reiniciar */
+}

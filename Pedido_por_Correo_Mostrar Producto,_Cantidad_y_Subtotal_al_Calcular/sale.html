@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>DIC Café</title>
+    <!-- NORMALIZA ESTILOS ENTRE NAVEGADORES -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- ESTILOS PERSONALIZADOS PARA VENTA -->
+    <link href="css/sale.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header id="top">
+      <nav class="header_nav">
+        <!-- LOGO -->
+        <a class="logo" href="sale.html"
+          ><img src="images/sample_logo_k.png" alt="Logo"
+        /></a>
+        <ul class="global_nav">
+          <li><a href="sale.html" class="global_nav_item">Inicio</a></li>
+          <li><a href="#" class="global_nav_item">Menú</a></li>
+          <li><a href="contact.html" class="global_nav_item">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section_inner">
+      <!-- TÍTULO PRINCIPAL -->
+      <div class="section_title">
+        <h1 class="menu_title">Venta de Café en Grano</h1>
+      </div>
+    </section>
+
+    <section class="section_inner menu_section">
+      <!-- SUBTÍTULO DE PRODUCTOS -->
+      <div class="center">
+        <h1 class="subt">Nuestra Selección de Productos</h1>
+      </div>
+      <!-- LISTA DE PRODUCTOS -->
+      <ul class="menu_list coffee_menu">
+        <div class="fila">
+          <li class="caffee_menu_list_item">
+            <div class="caffee_menu_content">
+              <h2 class="menu_item_title">Mezcla Original 200 g</h2>
+              <p class="caffee_menu_price">500 yenes.</p>
+            </div>
+            <img
+              src="images/sample_cafe1.jpg"
+              class="caffee_menu_image"
+              alt="Mezcla Original 200 g"
+            />
+          </li>
+          <li class="caffee_menu_list_item">
+            <div class="caffee_menu_content">
+              <h2 class="menu_item_title">Mezcla Original 500 g</h2>
+              <p class="caffee_menu_price">900 yenes.</p>
+            </div>
+            <img
+              src="images/sample_cafe1.jpg"
+              class="caffee_menu_image"
+              alt="Mezcla Original 500 g"
+            />
+          </li>
+        </div>
+        <div class="fila">
+          <li class="caffee_menu_list_item">
+            <div class="caffee_menu_content">
+              <h2 class="menu_item_title">Mezcla Especial 200 g</h2>
+              <p class="caffee_menu_price">700 yenes.</p>
+            </div>
+            <img
+              src="images/sample_cafe3.jpg"
+              class="caffee_menu_image"
+              alt="Mezcla Especial 200 g"
+            />
+          </li>
+          <li class="caffee_menu_list_item">
+            <div class="caffee_menu_content">
+              <h2 class="menu_item_title">Mezcla Especial 500 g</h2>
+              <p class="caffee_menu_price">1.200 yenes.</p>
+            </div>
+            <img
+              src="images/sample_cafe3.jpg"
+              class="caffee_menu_image"
+              alt="Mezcla Especial 500 g"
+            />
+          </li>
+        </div>
+      </ul>
+      <!-- COSTOS DE ENVÍO -->
+      <h2>Costo de Envío</h2>
+      <ul>
+        <li>
+          500 yenes por gastos de envío si el importe total es inferior a 2.000
+          yenes.
+        </li>
+        <li>250 yenes por un mínimo de 2.000 yenes.</li>
+        <li>Gratuito a partir de 3.000 yenes.</li>
+      </ul>
+    </section>
+
+    <section class="section_inner">
+      <h2>Hacer un Pedido</h2>
+      <form>
+        <p>Selecciona un producto.</p>
+        <div>
+          <select id="product" required>
+            <option hidden value="0">Por favor, seleccione.</option>
+            <option value="1">Mezcla Original 200g ¥ 500</option>
+            <option value="2">Mezcla Original 500g ¥ 900</option>
+            <option value="3">Mezcla Especial 200g ¥ 700</option>
+            <option value="4">Mezcla Especial 500g ¥ 1.200</option>
+          </select>
+          <p>Selecciona la cantidad.</p>
+          <input type="number" min="1" max="5" id="number" required />
+        </div>
+        <br />
+        <!-- BOTÓN CALCULAR IMPORTE TOTAL -->
+        <input
+          type="button"
+          class="btn"
+          value="Importe Total"
+          onclick="calc()"
+        />
+        <!-- BOTÓN AÑADIR AL CARRITO -->
+        <input type="button" class="btn" value="Añadir" onclick="add()" />
+      </form>
+    </section>
+
+    <!-- ENLACE A JAVASCRIPT -->
+    <script type="text/javascript" src="javascripts/sale.js"></script>
+
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li><a href="sale.html">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li>
+            <a href="sale.html"
+              ><img src="images/sample_logo_w.png" alt="Logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        <p>&copy; DIVIC Corp. Todos los Derechos Reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

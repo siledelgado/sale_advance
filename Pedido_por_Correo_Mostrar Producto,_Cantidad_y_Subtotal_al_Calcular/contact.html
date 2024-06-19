@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>DIC Café</title>
+    <!-- Enlace a las hojas de estilo -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/sale.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- CABECERA DE LA PÁGINA -->
+    <header id="top">
+      <nav class="header_nav">
+        <!-- Logo del sitio con enlace a la página de ventas -->
+        <a href="sale.html"
+          ><img src="images/sample_logo_k.png" alt="Logo"
+        /></a>
+        <!-- Menú de navegación -->
+        <ul class="global_nav">
+          <li><a href="sale.html" class="global_nav_item">Inicio</a></li>
+          <li><a href="#" class="global_nav_item">Menú</a></li>
+          <li><a href="contact.html" class="global_nav_item">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="section_inner">
+      <div class="section_title">
+        <h1>CONTACTO</h1>
+        <p>Contáctanos.</p>
+      </div>
+      <!-- Formulario de contacto -->
+      <form action="#" method="POST">
+        <table class="contact">
+          <tr class="contact_line">
+            <td class="contact_sing"><label for="name">Nombre</label></td>
+            <td class="contact_input">
+              <input type="text" name="name" id="name" />
+            </td>
+          </tr>
+          <tr class="contact_line">
+            <td class="contact_sing">
+              <label for="phonenumber">Datos de Contacto</label>
+            </td>
+            <td class="contact_input">
+              <input type="tel" name="phonenumber" id="phonenumber" />
+            </td>
+          </tr>
+          <tr class="contact_line">
+            <td class="contact_sing">
+              <label for="region">Región de Residencia</label>
+            </td>
+            <td>
+              <select id="region">
+                <option value="0">Por favor, seleccione.</option>
+                <option value="1">Hokkaido</option>
+                <option value="2">
+                  Tohoku (las seis prefecturas más septentrionales de Honshu)
+                </option>
+                <option value="3">
+                  Kantou (mitad oriental de Japón, incluido Tokio)
+                </option>
+                <option value="4">Centro</option>
+                <option value="5">
+                  Kinki (región alrededor de Osaka, Kioto y Nara)
+                </option>
+                <option value="6">Chugoku y Shikoku</option>
+                <option value="7">
+                  Kyushu (la más meridional de las cuatro islas principales de
+                  Japón)
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr class="contact_content">
+            <td class="contact_sing"><label for="content">Contenido</label></td>
+            <td class="contact_input">
+              <textarea name="content" id="content"></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="contact_btn_area">
+          <!-- Botones de reiniciar y enviar formulario -->
+          <button type="reset" class="contact_btn reset_btn">Reiniciar</button>
+          <button type="submit" class="contact_btn submit_btn">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="sale.html">Inicio</a></li>
+          <li><a href="#">Menú</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <!-- Logo del pie de página con enlace a la página principal -->
+          <li>
+            <a href="index.html"
+              ><img
+                src="images/sample_logo_w.png"
+                class="footer_logo"
+                alt="Logo"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        <p class="footer_right">
+          &copy;DIVIC Corp. Todos los Derechos Reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
